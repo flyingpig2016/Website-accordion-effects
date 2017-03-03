@@ -1,0 +1,49 @@
+*{margin:0;padding:0}
+.content{
+    margin:50px;
+    position:relative;
+    /*width=400+60*5=700*/
+    width:700px; 
+    height:400px;
+    overflow: hidden;
+}
+.content figure{
+	position:absolute;top:0;left:60px;
+    width: 400px;
+    height: 400px;
+    /*left变为60px（向左移）的时间大于下面left变为400px的时间*/
+    -webkit-transition:left 0.5s ease-in-out;
+}
+.content > fingure{
+    position: relative;
+    left:0;
+}
+.content img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.content input{
+    position: absolute;top:0;left:0;
+    width:60px;
+    height:100%;
+    cursor:pointer;
+    z-index: 2;
+    opacity: 0;
+}
+/*选择E元素后面的所有兄弟元素F */
+.content input:checked ~ figure{
+    left:400px;
+    -webkit-transition:left 1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
