@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="subject" class="wrapper">
+    <ul>
+        <li class="big">
+            <a href="#link1">
+                <img src="./imgs/1.jpg">
+                <div class="info">
+                <h3 style="color:#f62368">聚美妆</h3>
+                <p>聚美妆1/2周年庆</p>
+                <p class="price"><strong>1</strong><i>折起</i></p>
+                </div>
+                <s class="line"></s>
+                <i class="mask"></i>
+            </a>
+        </li>
+     <li>
+            <a href="#link1">
+                <img src="./imgs/1.jpg">
+                <div class="info">
+                <h3 style="color:#f62368">聚美妆</h3>
+                <p>聚美妆1/2周年庆</p>
+                <p class="price"><strong>1</strong><i>折起</i></p>
+                </div>
+                <s class="line"></s>
+                <i class="mask"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#link1">
+                <img src="./imgs/1.jpg">
+                <div class="info">
+                <h3 style="color:#f62368">聚美妆</h3>
+                <p>聚美妆1/2周年庆</p>
+                <p class="price"><strong>1</strong><i>折起</i></p>
+                </div>
+                <s class="line"></s>
+                <i class="mask"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#link1">
+                <img src="./imgs/1.jpg">
+                <div class="info">
+                <h3 style="color:#f62368">聚美妆</h3>
+                <p>聚美妆1/2周年庆</p>
+                <p class="price"><strong>1</strong><i>折起</i></p>
+                </div>
+                <s class="line"></s>
+                <i class="mask"></i>
+            </a> 
+        </li>
+        <li>
+            <a href="#link1">
+                <img src="./imgs/1.jpg">
+                <div class="info">
+                <h3 style="color:#f62368">聚美妆</h3>
+                <p>聚美妆1/2周年庆</p>
+                <p class="price"><strong>1</strong><i>折起</i></p>
+                </div>
+                <s class="line"></s>
+                <i class="mask"></i>
+            </a>
+        </li>
+    </ul>
+    </div>
+    <script>
+//    	$(function(){
+//			$('ul li').on('mouseover',function(){
+//				$(this).addClass('big').siblings().removeClass('big');
+//			})
+//		})
+		var lis = document.getElementById('subject').getElementsByTagName('li');
+		for(var i=0; i<lis.length; i++){
+			lis[i].addEventListener('mouseover',function(){
+				for(var j=0; j<lis.length; j++){
+					lis[j].className = '';
+				}
+				this.className = 'big';
+			},false)
+		}
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
