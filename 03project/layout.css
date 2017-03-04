@@ -1,0 +1,42 @@
+		#sm{
+			margin:100px auto;
+		}
+		.slider-img{
+			height:300px;
+		}
+		.slider-img img{
+			display: block;
+			width:100%;
+			height: 100%;
+		}
+		li {
+			list-style: none;
+		}
+		ul,
+		li {
+			padding: 0;
+			margin: 0;
+			-transition: .5s;
+		}
+		
+		.fold_wrap {
+			width: 1200px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		
+		.fold_wrap ul {
+			width: 1200px;
+			height: 260px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		
+		.fold_wrap ul li {
+			float: left;
+			width: 130px;
+			height: 260px;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+		}
